@@ -11,12 +11,15 @@
 <b>比GapFile新增的功能</b>：<br>
 <pre>
 新增：
-QuickFile.errorToString(FileError e)
-    返回代表该错误的字符串。
+    QuickFile.errorToString(FileError e)
+        返回代表该错误的字符串。
     
     
 修改：
-QuickFile.mkDirectory(...)
-    如果创建的目录及其父级目录都不存在，将不会出错，而是递归逐级创建。目录递归层数取决于文件系统支持。
+    QuickFile.mkDirectory(...)
+      如果创建的目录及其父级目录都不存在，将不会出错，而是递归逐级创建。目录递归层数取决于文件系统支持。
+    
+    QuickFile.rmDirectory(...)
+      递归删除
 <pre>
 </p>
