@@ -10,9 +10,13 @@
 <b>改写自GapFile的函数</b>：<br>参见GapFile项目的说明：https://github.com/tonyhursh/gapfile <br><br>
 <b>比GapFile新增的功能</b>：<br>
 <pre>
+新增：
 QuickFile.errorToString(FileError e)
-    返回代表该错误的字符串。<br>
+    返回代表该错误的字符串。
+    
+    
+修改：
 QuickFile.mkDirectory(...)
-    基于原函数修改，如果创建的目录及其父母录都不存在，将不会出错，而是递归逐级创建（权限足够的情况下）
+    如果创建的目录及其父级目录都不存在，将不会出错，而是递归逐级创建。目录递归层数取决于文件系统支持。
 <pre>
 </p>
